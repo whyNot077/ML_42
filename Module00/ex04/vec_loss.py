@@ -17,6 +17,7 @@ def loss_(y, y_hat):
         not isinstance(y_hat, np.ndarray) or y_hat.size == 0 or \
         y.ndim != y_hat.ndim:
         return None
+    
     cost = np.sum((y_hat - y) ** 2) / (2 * len(y))
     print(cost)
     return cost
