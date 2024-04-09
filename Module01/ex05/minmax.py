@@ -15,8 +15,9 @@ def minmax(x):
 
     if min_x == max_x:
         return x
-
-    return (x - min_x) / (max_x - min_x)
+    res = (x - min_x) / (max_x - min_x)
+    print(res)
+    return res
 
 if __name__ == "__main__":
     X = np.array([0, 15, -9, 7, 12, 3, -21]).reshape((-1, 1)) 
