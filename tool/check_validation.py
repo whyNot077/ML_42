@@ -40,6 +40,9 @@ def check_valid_theta(array, col_x):
         return None
     return array
 
+def get_biased_x(x):
+    return np.hstack((np.ones((x.shape[0], 1)), x))
+
 if __name__ == "__main__":
     y=np.array([[0], [0], [0]])
     y_hat=np.array([[1], [0], [1]])
